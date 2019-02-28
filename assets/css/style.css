@@ -1,0 +1,24 @@
+h1 {
+  background-color: #F6891C;
+  color: white;
+  width: 315px;
+  margin: 5px;
+  padding: 15px 0 15px;
+}
+
+#gameInst {
+  background-color: #FBE8D4;
+  width: 430px;
+  height: 430px;
+  margin: 5px;
+}
+
+.desc {
+  color: green;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+body {
+  background-color: powderblue;
+}
