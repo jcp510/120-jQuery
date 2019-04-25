@@ -18,7 +18,7 @@
       <h1>CrystalsCollector!</h1>
 
       <!-- Game description and instructions. -->
-      <div id="gameInst">
+      <div id="game-inst">
         <p class="desc">You will be shown a random number at the beginning of the game.</p>
         <p class="desc">There are four crystals below.  Clicking on a crystal will add a specific amount to your total score.</p>
         <p class="desc">Win the game by matching your total score to the random number.  You lose if your total score goes over the random number.</p>
@@ -28,7 +28,7 @@
 
       <!-- Randomly generated number and wins/losses count. -->
       <div>
-        <div id="ranNum"></div>
+        <div id="ran-num"></div>
 
         <div>
           <p>Wins: </p>
@@ -38,10 +38,10 @@
 
       <!-- Crystal images. -->
       <div>
-        <img src="assets/images/blueCrystal.png" class="img-fluid rounded float-left" alt="">
-        <img src="assets/images/greenCrystal.png" class="img-fluid rounded float-left" alt="">
-        <img src="assets/images/violetCrystal.png" class="img-fluid rounded float-left" alt="">
-        <img src="assets/images/redCrystal.png" class="img-fluid rounded" alt="">
+        <img id="blu-crys" src="assets/images/blueCrystal.png" class="img-fluid rounded float-left" alt="blue crystal">
+        <img id="grn-crys" src="assets/images/greenCrystal.png" class="img-fluid rounded float-left" alt="green crystal">
+        <img id="vio-crys" src="assets/images/violetCrystal.png" class="img-fluid rounded float-left" alt="violet crystal">
+        <img id="red-crys" src="assets/images/redCrystal.png" class="img-fluid rounded" alt="red crystal">
       </div>
 
       <!-- Your total score text. -->
@@ -50,11 +50,9 @@
       </div>
 
       <!-- Your total score number. -->
-      <div id="totalScoreNum"></div>
+      <div id="tot-score-num"></div>
     </div>
     
-
-    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
