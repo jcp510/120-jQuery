@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- My CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -15,42 +14,44 @@
   </head>
 
   <body>
+    <div class="container">
+      <h1>CrystalsCollector!</h1>
 
-    <h1>CrystalsCollector!</h1>
+      <!-- Game description and instructions. -->
+      <div id="gameInst">
+        <p class="desc">You will be shown a random number at the beginning of the game.</p>
 
-    <!-- Game description and instructions. -->
-    <div id="gameInst">
-      <p class="desc">You will be shown a random number at the beginning of the game.</p>
+        <p class="desc">There are four crystals below.  Clicking on a crystal will add a specific amount to your total score.</p>
 
-      <p class="desc">There are four crystals below.  Clicking on a crystal will add a specific amount to your total score.</p>
+        <p class="desc">Win the game by matching your total score to the random number.  You lose if your total score goes over the random number.</p>
 
-      <p class="desc">Win the game by matching your total score to the random number.  You lose if your total score goes over the random number.</p>
+        <p class="desc">The value of each crystal is hidden from you until you click on it.</p>
 
-      <p class="desc">The value of each crystal is hidden from you until you click on it.</p>
-
-      <p class="desc">The value of each crystal will change for each new game.</p>
-    </div>
-
-    <!-- Randomly generated number and wins/losses count. -->
-    <div>
-      <div id="ranNum"></div>
-
-      <div>
-        <p>Wins: </p>
-        <p>Losses: </p>
+        <p class="desc">The value of each crystal will change for each new game.</p>
       </div>
+
+      <!-- Randomly generated number and wins/losses count. -->
+      <div>
+        <div id="ranNum"></div>
+
+        <div>
+          <p>Wins: </p>
+          <p>Losses: </p>
+        </div>
+      </div>
+
+      <!-- Crystal images. -->
+      <div></div>
+
+      <!-- Your total score text. -->
+      <div>
+        <p>Your total score is: </p>
+      </div>
+
+      <!-- Your total score number. -->
+      <div></div>
     </div>
-
-    <!-- Crystal images. -->
-    <div></div>
-
-    <!-- Your total score text. -->
-    <div>
-      <p>Your total score is: </p>
-    </div>
-
-    <!-- Your total score number. -->
-    <div></div>
+    
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
