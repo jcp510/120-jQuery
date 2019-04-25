@@ -9,7 +9,6 @@ h1 {
 #gameInst {
   background-color: #FBE8D4;
   width: 430px;
-  height: 430px;
   margin: 5px;
 }
 
@@ -21,4 +20,9 @@ h1 {
 
 body {
   background-color: powderblue;
+}
+
+img {
+  width: 150px;
+  height: 150px;
 }
