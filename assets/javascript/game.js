@@ -1,10 +1,14 @@
 $(document).ready(function() {
     // Generates random number between min - max (max is not inclusive).
-    let makeRanNum = function(min, max) {
+    var makeRanNum = function(min, max) {
         return Math.floor(Math.random() * (Math.floor(max) - Math.ceil(min))) + min;
     };
-    let playerScore = 0;
-    let blue, green, violet, red;
+    
+    var playerScore = 0;
+    var blue = {color: "blue"};
+    var green = {color: "green"};
+    var violet = {color: "violet"};
+    var red = {color: "red"};
     
     // Initialize game with a random number.  
     $("#ran-num").text(makeRanNum(19, 121));
@@ -13,17 +17,41 @@ $(document).ready(function() {
     $("#tot-score-num").text(playerScore);
 
     // Assign random values between 1 - 12 to each crystal.
-    blue = makeRanNum(1, 13);
-    console.log("blue = " + blue);
+    blue.value = makeRanNum(1, 13);
+    console.log(blue);
 
-    green = makeRanNum(1, 13);
-    console.log("green = " + green);
+    green .value= makeRanNum(1, 13);
+    console.log(green);
 
-    violet = makeRanNum(1, 13);
-    console.log("violet = " + violet);
+    violet.value = makeRanNum(1, 13);
+    console.log(violet);
 
-    red = makeRanNum(1, 13);
-    console.log("red = " + red);
+    red.value = makeRanNum(1, 13);
+    console.log(red);
+
+    // Adds value of the crystal clicked to player score.
+    $("#blu-crys").on("click", function() {
+        playerScore += blue.value;
+        $("#tot-score-num").text(playerScore);
+    });
+    
+    $("#grn-crys").on("click", function() {
+        playerScore += green.value;
+        $("#tot-score-num").text(playerScore);
+    });
+
+    $("#vio-crys").on("click", function() {
+        playerScore += violet.value;
+        $("#tot-score-num").text(playerScore);
+    });
+
+    $("#red-crys").on("click", function() {
+        playerScore += red.value;
+        $("#tot-score-num").text(playerScore);
+    });
+
+    // 
+
 });
 
 
